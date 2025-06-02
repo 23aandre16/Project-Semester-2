@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Materi Sejarah{% endblock %}
+
+{% block content %}
+<h2>Daftar Materi Sejarah</h2>
+<a href="{{ url_for('tambah_materi') }}" class="button">Tambah Materi Baru</a>
+
+<div class="materi-list">
+    {% for m in materi %}
+    <article class="materi-card">
+        <h3>{{ m['judul'] }}</h3>
+        <p class="periode">{{ m['periode'] }}</p>
+        <p>{{ m['isi']|truncate(200) }}</p>
+        <a href="{{ url_for('selesai', materi_id=m['id']) }}" class="button">Pelajari</a>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}

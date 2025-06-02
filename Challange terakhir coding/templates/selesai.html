@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Selesai Belajar{% endblock %}
+
+{% block content %}
+<div class="selesai-container">
+    <h2>🎉 Selamat!</h2>
+    <p>Anda telah menyelesaikan materi: <strong>{{ judul }}</strong></p>
+    
+    <div class="actions">
+        <a href="{{ url_for('materi') }}" class="button">Lihat Materi Lain</a>
+        <a href="{{ url_for('beranda') }}" class="button secondary">Kembali ke Beranda</a>
+    </div>
+</div>
+{% endblock %}

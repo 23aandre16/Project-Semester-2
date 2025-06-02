@@ -1,0 +1,92 @@
+/* Reset Dasar */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Layout */
+  body {
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #c62828;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Warna Dasar */
+  .primary {
+    color: #c62828;
+  }
+  
+  /* Tombol */
+  button, .button {
+    background: #c62828;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Form */
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  /* Card Materi */
+  .materi-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  /* Flash Message */
+  .flash {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .flash.success {
+    background: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .flash.error {
+    background: #f2dede;
+    color: #a94442;
+  }
+  
+  /* Responsif Dasar */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    nav a {
+      display: block;
+      margin: 5px 0;
+    }
+  }

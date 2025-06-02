@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Tambah Materi{% endblock %}
+
+{% block content %}
+<h2>Tambah Materi Baru</h2>
+<form method="POST">
+    <label for="judul">Judul Materi:</label>
+    <input type="text" id="judul" name="judul" required>
+
+    <label for="periode">Periode Sejarah:</label>
+    <select id="periode" name="periode" required>
+        <option value="Pra-Sejarah">Pra-Sejarah</option>
+        <option value="Kerajaan Hindu-Buddha">Kerajaan Hindu-Buddha</option>
+        <option value="Kerajaan Islam">Kerajaan Islam</option>
+        <option value="Kolonial">Masa Kolonial</option>
+        <option value="Kemerdekaan">Periode Kemerdekaan</option>
+    </select>
+
+    <label for="isi">Isi Materi:</label>
+    <textarea id="isi" name="isi" required></textarea>
+
+    <button type="submit" class="button">Simpan Materi</button>
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Kuis Sejarah{% endblock %}
+
+{% block content %}
+<div class="kuis-container">
+    <h2>Kuis Sejarah</h2>
+    <div class="soal">
+        <p>{{ soal['pertanyaan'] }}</p>
+        <form method="POST">
+            <input type="text" name="jawaban" placeholder="Jawaban Anda..." required>
+            <button type="submit" class="button">Kirim Jawaban</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
